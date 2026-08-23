@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClipPulse Studio — Smart Video Formatting & Publishing Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-hover: #4f46e5;
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        header {
+            padding: 24px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #334155;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #a855f7, #6366f1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+        nav a:hover { color: var(--text); }
+        .hero {
+            padding: 80px 0 60px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin: 60px 0;
+        }
+        .card {
+            background-color: var(--card-bg);
+            padding: 32px;
+            border-radius: 16px;
+            border: 1px solid #334155;
+        }
+        .card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            color: #fff;
+        }
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+        footer {
+            padding: 40px 0;
+            border-top: 1px solid #334155;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: var(--primary);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">ClipPulse Studio</div>
+            <nav>
+                <a href="#features">Features</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <h1>Automate & Polish Your Video Workflow</h1>
+            <p>Smart video editing, aspect ratio optimization (9:16 vertical video conversion), lossless splitting, and seamless social media integration.</p>
+        </section>
+
+        <section class="features" id="features">
+            <div class="card">
+                <h3>⚡ 9:16 Vertical Video Optimization</h3>
+                <p>Convert horizontal video streams into dynamic vertical formats with intelligent crop, zoom, and branding overlays.</p>
+            </div>
+            <div class="card">
+                <h3>✂️ Segment Slicing & Processing</h3>
+                <p>Automate video fragmentation into bite-sized clips with customized intro/outro promotional banners.</p>
+            </div>
+            <div class="card">
+                <h3>🌐 Direct Creator Publishing</h3>
+                <p>Authorize your social media accounts via secure OAuth 2.0 and upload content directly with custom privacy and interaction controls.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 ClipPulse Studio. All rights reserved.</p>
+            <p style="margin-top: 10px;">
+                <a href="privacy.html">Privacy Policy</a> | 
+                <a href="terms.html">Terms of Service</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
